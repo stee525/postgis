@@ -1,7 +1,7 @@
 FROM postgis/postgis
 
 # Update and install dependencies
-RUN apt-get update && apt-get install -y wget osm2pgsql python3-pip
+RUN apt-get update && apt-get install -y wget osm2pgsql python3.11-pip
 
 # Copy the default.style file needed for osm2pgsql
 COPY default.style /usr/bin/
