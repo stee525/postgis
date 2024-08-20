@@ -1,0 +1,13 @@
+{
+	"name": "PostgreSQL with Postgis",
+
+    "extensions": [
+        "ms-python.python",             // Python language support
+        "ms-toolsai.jupyter",           // Jupyter notebook support
+        "ms-azuretools.vscode-docker",  // Docker integration
+        "ms-python.autopep8",           // Python code formatting
+        "ms-python.pylint",             // Python linting
+        "analytic-signal.preview-pdf"   // PDF preview
+    ]
+
+}

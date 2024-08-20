@@ -1,0 +1,6 @@
+folium
+psycopg2
+pandas
+geopandas
+sqlalchemy
+matplotlib
