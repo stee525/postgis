@@ -1,13 +1,16 @@
 {
-	"name": "PostgreSQL with Postgis",
-
-    "extensions": [
-        "ms-python.python",             // Python language support
-        "ms-toolsai.jupyter",           // Jupyter notebook support
-        "ms-azuretools.vscode-docker",  // Docker integration
-        "ms-python.autopep8",           // Python code formatting
-        "ms-python.pylint",             // Python linting
-        "analytic-signal.preview-pdf"   // PDF preview
-    ]
+    "name": "Python with PostgreSQL & Postgis",
+    "customizations": {    
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker",
+                "ms-python.autopep8",
+                "ms-python.pylint",
+                "analytic-signal.preview-pdf"
+            ]
+        }
+   }
 
 }
