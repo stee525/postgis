@@ -21,8 +21,10 @@ services:
     image: dpage/pgadmin4:latest
     container_name: pgadmin_container
     environment:
-      PGADMIN_DEFAULT_EMAIL: peter.lustig@gmail.com
+      PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
       PGADMIN_DEFAULT_PASSWORD: geheim
+      PGADMIN_CONFIG_WTF_CSRF_HEADERS: '["Referer", "Origin"]'
+      PGADMIN_CONFIG_WTF_CSRF_ENABLED: 'False'
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     ports:
