@@ -1,3 +1,4 @@
+-- Select all supermarkets with defined buffer
 SELECT
     p.osm_id,
     p."addr:street",

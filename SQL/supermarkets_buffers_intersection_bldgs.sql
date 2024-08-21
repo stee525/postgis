@@ -9,6 +9,7 @@ WITH supermarket_buffers AS (
         p.shop = 'supermarket'
         AND p."addr:postcode" IN ('8001', '8055')
 ),
+
 -- Preselection of buildings (to reduce data size)
 buildings AS (
     SELECT
@@ -24,6 +25,7 @@ buildings AS (
         p."addr:street" IS NOT NULL
         AND p."addr:city" = 'Zürich'
 )
+
 -- Select buildings inside supermarket buffers
 SELECT
     b.building_osm_id,

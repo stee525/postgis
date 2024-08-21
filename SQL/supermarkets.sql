@@ -1,3 +1,4 @@
+-- Get supermarkets with defined brand names.
 SELECT
     p.osm_id,
     p."addr:street",

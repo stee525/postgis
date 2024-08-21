@@ -1,3 +1,4 @@
+-- Get supermarkets with defined distance to motorways.
 SELECT p.osm_id,
 	p."addr:street",
 	p."addr:housenumber",

@@ -1,3 +1,4 @@
+-- Find intersections between buffers of supermarkets.
 WITH BufferedSupermarkets AS (
     SELECT
         p.osm_id,

@@ -1,3 +1,4 @@
+-- Get the administrative boundaries of Switzerland and calculate area
 SELECT 
     osm_id,
     name,
