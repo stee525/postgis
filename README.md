@@ -128,4 +128,4 @@ AND p."addr:city" = 'Zürich'
 AND p."addr:postcode" IN ('8001')
 ```
 
-**Tip: If you click on the flag symbol in the st_transform column, you can visualize the spatial data directly in pgAdmin.**
+**Tip: If you click on the flag symbol in the st_transform column of the results table, you can visualize the spatial data in pgAdmin.**
