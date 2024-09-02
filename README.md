@@ -4,6 +4,7 @@
 - [Table of Contents](#table-of-contents)
 - [File structure](#file-structure)
 - [Run Docker containers](#run-docker-containers)
+- [Create conda environment](#create-conda_environment)
 - [Database credentials](#database-credentials)
 - [Import OSM data](#import-osm-data)
 
@@ -27,6 +28,26 @@ Project/
 ## Run Docker containers
 ```bash
 VS Code -> left Menu -> search file 'docker-compose.yml' -> right click -> Compose Up
+```
+
+## Create conda environment
+To create a new conda environment, open a new Terminal and run:
+
+```bash
+# Initialize conda
+conda init
+
+# Create a new conda environment
+conda create -n envname python=3.11
+
+# Activate the new conda environment
+conda activate envname
+
+# Install libraries
+pip install -r requirements.txt
+
+# Reload Visual Studio Code (VSCode) to make changes visible
+Open the Command Palette (Ctrl + Shift + P), then type: Developer: Reload Window
 ```
 
 ## Database credentials
