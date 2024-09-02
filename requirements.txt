@@ -1,5 +1,5 @@
 folium
-psycopg2
+psycopg2-binary
 pandas
 geopandas
 sqlalchemy
