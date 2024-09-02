@@ -68,7 +68,9 @@ q
 ```
 
 ## Register Server
-In VS Code, open a new Terminal. In the upper part of the Terminal, click on 'Ports'.
+The pgAdmin tool can be used to manage the databases. Therefore, a server must be registered.
+
+In VS Code, open a new Terminal. In the upper part of the Terminal, click on 'PORTS'.
 
 Search for the port 5050 and click on 'Open in Browser' on the right side of the link.
 
