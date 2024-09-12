@@ -49,7 +49,7 @@ In VS Code -> Terminal, use the following Docker commands to insert OpenStreetMa
 docker ps
 
 # Show available databases
-docker exec -it postgis_container psql -U pgadmin -c "\l"
+docker exec -it postgis_container psql -U postgres -c "\l"
 
 # Open bash and run osm2pgsql commands to fill up OpenStreetMap tables
 docker exec -it postgis_container bash
