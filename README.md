@@ -36,7 +36,7 @@ VS Code -> left Menu -> search file 'docker-compose.yml' -> right click -> Compo
 Host: db
 Port: 5432
 Maintenance database: postgres
-Username: postgres
+Username: pgadmin
 Password: geheim
 ```
 
@@ -49,19 +49,19 @@ In VS Code -> Terminal, use the following Docker commands to insert OpenStreetMa
 docker ps
 
 # Show available databases
-docker exec -it postgis_container psql -U postgres -c "\l"
+docker exec -it postgis_container psql -U pgadmin -d osm_switzerland -c "\l"
 
 # Open bash and run osm2pgsql commands to fill up OpenStreetMap tables
 docker exec -it postgis_container bash
 
 # Run the following code in bash (change user name and password if required)
-PGPASSWORD=geheim osm2pgsql -c -d osm_switzerland -U postgres -H db -P 5432 -S /usr/bin/default.style /tmp/switzerland-latest.osm.pbf
+PGPASSWORD=geheim osm2pgsql -c -d osm_switzerland -U pgadmin -H db -P 5432 -S /usr/bin/default.style /tmp/switzerland-latest.osm.pbf
 
 # Exit bash
 exit
 
 # Show available tables in the database 'osm_switzerland'
-docker exec -it postgis_container psql -U postgres -d osm_switzerland -c "\dt;"
+docker exec -it postgis_container psql -U pgadmin -d osm_switzerland -c "\dt;"
 
 # quit psql
 q
