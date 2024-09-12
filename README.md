@@ -94,19 +94,19 @@ Use the example queries from the SQL folder like:
 
 ```bash
 SELECT
-p.osm_id,
-p."addr:street",
-p."addr:housenumber",
-p."addr:city",
-p."addr:postcode",
-p.building,
-st_transform(p.way, 4326)
+    p.osm_id,
+    p."addr:street",
+    p."addr:housenumber",
+    p."addr:city",
+    p."addr:postcode",
+    p.building,
+    st_transform(p.way, 4326) AS geom
 FROM
-public.planet_osm_polygon AS p
+    public.planet_osm_polygon AS p
 WHERE 
-p."addr:street" IS NOT NULL
-AND p."addr:city" = 'Zürich'
-AND p."addr:postcode" IN ('8001')
+    p."addr:street" IS NOT NULL
+    AND p."addr:city" = 'Zürich'
+    AND p."addr:postcode" IN ('8001')
 ```
 
 **Tip: If you click on the flag symbol in the st_transform column of the results table, you can visualize the spatial data in pgAdmin.**
