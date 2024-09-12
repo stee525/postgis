@@ -109,4 +109,4 @@ WHERE
     AND p."addr:postcode" IN ('8001')
 ```
 
-**Tip: If you click on the flag symbol in the st_transform column of the results table, you can visualize the spatial data in pgAdmin.**
+**Tip: If you click on the flag symbol in the 'geom' column of the results table, you can visualize the spatial data in pgAdmin.**
