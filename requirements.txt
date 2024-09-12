@@ -1,3 +1,4 @@
+jupyter
 folium
 psycopg2-binary
 pandas
