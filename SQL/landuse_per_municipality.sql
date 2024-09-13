@@ -1,27 +1,27 @@
 -- landuse tags for green spaces in OSM data
-landuse=forest 					- Areas with forestry or woodland vegetation.
-landuse=grass 					- Areas covered in grass.
-landuse=greenfield 				- Undeveloped land reserved for urban development.
-landuse=garden 					- Private or community gardens.
-landuse=meadow 					- Fields or meadows, often used for agriculture or left to nature.
-landuse=orchard 				- Areas planted with fruit trees.
-landuse=vineyard 				- Areas used for growing grapes.
-landuse=cemetery 				- Land designated for burial.
-landuse=recreation_ground 		- Open spaces for general recreation.
-landuse=village_green 	  		- Common in British English for open space at a village’s heart.
-landuse=allotments 				- Areas of land rented for growing food plants.
-landuse=conservation 			- Land primarily used for conservation purposes.
-landuse=greenhouse_horticulture - Areas with greenhouses for growing plants.
+-- landuse=forest 					- Areas with forestry or woodland vegetation.
+-- landuse=grass 					- Areas covered in grass.
+-- landuse=greenfield 				- Undeveloped land reserved for urban development.
+-- landuse=garden 					- Private or community gardens.
+-- landuse=meadow 					- Fields or meadows, often used for agriculture or left to nature.
+-- landuse=orchard 				    - Areas planted with fruit trees.
+-- landuse=vineyard 				- Areas used for growing grapes.
+-- landuse=cemetery 				- Land designated for burial.
+-- landuse=recreation_ground 		- Open spaces for general recreation.
+-- landuse=village_green 	  		- Common in British English for open space at a village’s heart.
+-- landuse=allotments 				- Areas of land rented for growing food plants.
+-- landuse=conservation 			- Land primarily used for conservation purposes.
+-- landuse=greenhouse_horticulture - Areas with greenhouses for growing plants.
 
 -- leisure Tags for parks and recreational areas
-leisure=park 					- Urban or suburban areas dedicated to recreation, often green.
-leisure=garden 					- Managed areas of planted flowers, trees, etc., possibly with paths and seating.
-leisure=golf_course 			- Areas used for playing golf.
-leisure=nature_reserve 			- Protected areas for conservation and limited recreation.
-leisure=playground 				- Outdoor areas designed for children to play.
-leisure=pitch 					- Areas for playing team sports.
-leisure=green 					- Used for village greens and similar.
-leisure=sports_centre 			- Large areas that include facilities for various sports, often including green spaces.
+-- leisure=park 					- Urban or suburban areas dedicated to recreation, often green.
+-- leisure=garden 					- Managed areas of planted flowers, trees, etc., possibly with paths and seating.
+-- leisure=golf_course 			    - Areas used for playing golf.
+-- leisure=nature_reserve 			- Protected areas for conservation and limited recreation.
+-- leisure=playground 				- Outdoor areas designed for children to play.
+-- leisure=pitch 					- Areas for playing team sports.
+-- leisure=green 					- Used for village greens and similar.
+-- leisure=sports_centre 			- Large areas that include facilities for various sports, often including green spaces.
 
 -- Query landuse and calculate area
 SELECT

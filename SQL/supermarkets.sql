@@ -7,7 +7,7 @@ SELECT
     p."addr:postcode",
     p.shop,
     UPPER(p.name),
-    ST_TRANSFORM(p.way, 4326)
+    ST_TRANSFORM(p.way, 4326) AS geom
 FROM
     public.planet_osm_point AS p
 WHERE 

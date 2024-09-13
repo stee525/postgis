@@ -80,7 +80,7 @@ AND poi.amenity IN ('bar',
                     'cafe', 
                     'pub', 
                     'cinema', 
-                    'theatre')
+                    'theatre');
 
 
 -- Count POI per hotel

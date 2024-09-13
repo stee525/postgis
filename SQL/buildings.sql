@@ -5,7 +5,7 @@ p."addr:housenumber",
 p."addr:city",
 p."addr:postcode",
 p.building,
-st_transform(p.way, 4326)
+st_transform(p.way, 4326) AS geom
 FROM
 public.planet_osm_polygon AS p
 WHERE 
