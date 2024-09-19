@@ -35,26 +35,26 @@ JOIN
     public.planet_osm_polygon AS z ON ST_Contains(z.way, p.way)
 WHERE
     (p.landuse IN ('forest',
-		  'grass',
-		  'greenfield',
-		  'garden',
-		  'meadow',
-		  'orchard',
-		  'vineyard',
-		  'cemetery',
-		  'recreation_ground',
-		  'village_green',
-		  'allotments',
-		  'conservation',
-		  'greenhouse_horticulture')
+					'grass',
+					'greenfield',
+					'garden',
+					'meadow',
+					'orchard',
+					'vineyard',
+					'cemetery',
+					'recreation_ground',
+					'village_green',
+					'allotments',
+					'conservation',
+					'greenhouse_horticulture')
     OR p.leisure IN ('park',
-		      'garden',
-		      'golf_course',
-		      'nature_reserve',
-		      'playground',
-		      'pitch',
-		      'green',
-		      'sports_centre'))
+					'garden',
+					'golf_course',
+					'nature_reserve',
+					'playground',
+					'pitch',
+					'green',
+					'sports_centre'))
     AND z.admin_level = '8'
     AND z.name = 'Zürich';
 
