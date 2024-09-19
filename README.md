@@ -15,6 +15,7 @@ Project/
 │
 ├── .devcontainer/
 │   └── devcontainer.json
+|   └── servers.json
 │
 ├── SQL
 ├── default.style
