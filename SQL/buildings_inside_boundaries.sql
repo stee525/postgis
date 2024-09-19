@@ -1,4 +1,4 @@
--- All buildings of type 'apartments' inside the city of Zuerich
+-- All buildings inside the city of Zuerich
 WITH zurich_boundary AS (
     SELECT way
     FROM planet_osm_polygon
@@ -17,5 +17,4 @@ SELECT
     ST_Transform(b.way, 4326) AS geom
 FROM planet_osm_polygon b
 WHERE b.building IS NOT NULL
-AND b.building = 'apartments' -- Select 'apartments'
 AND ST_Within(ST_Transform(b.way, 4326), (SELECT ST_Transform(way, 4326) FROM zurich_boundary));
