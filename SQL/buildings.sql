@@ -1,3 +1,4 @@
+-- Buildings
 SELECT
     p.osm_id,
     p."addr:street",
