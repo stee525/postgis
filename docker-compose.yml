@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: postgis_container
     environment:
-      POSTGRES_DB: postgres
+      POSTGRES_DB: osm_switzerland
       POSTGRES_USER: pgadmin
       POSTGRES_PASSWORD: geheim
     volumes:
