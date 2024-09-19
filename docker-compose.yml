@@ -28,6 +28,7 @@ services:
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
     volumes:
       - pgadmin_data:/var/lib/pgadmin
+      - ./.devcontainer/servers.json:/pgadmin4/servers.json
     ports:
       - "5050:80"
     restart: unless-stopped
