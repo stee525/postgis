@@ -1,4 +1,4 @@
--- All 'buildings'='apartments' inside the city of Zuerich
+-- All buildings of type 'apartments' inside the city of Zuerich
 WITH zurich_boundary AS (
     SELECT way
     FROM planet_osm_polygon
