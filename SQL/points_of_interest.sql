@@ -18,7 +18,6 @@ FROM planet_osm_point h
 WHERE h.tourism = 'hotel'
 AND ST_Within(ST_Transform(h.way, 4326), (SELECT ST_Transform(way, 4326) FROM zurich_boundary));
 
-
 -- Points-of-Interest
 WITH zurich_boundary AS (
     SELECT way
@@ -42,7 +41,6 @@ WHERE poi.amenity IN ('bar',
 					  'cinema', 
 					  'theatre')
 AND ST_Within(ST_Transform(poi.way, 4326), (SELECT ST_Transform(way, 4326) FROM zurich_boundary));
-
 
 -- Points-of-Interest in Buffer-Distance around hotels
 WITH zurich_boundary AS (

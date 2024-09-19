@@ -8,7 +8,7 @@ SELECT
   ST_Transform(p.way, 4326) AS way_transformed,
   ST_Distance(
     ST_Transform(p.way, 4326)::geography,
-	-- Zürich, Grossmünster
+  -- Zürich, Grossmünster
     ST_SetSRID(ST_MakePoint(8.54394, 47.37011), 4326)::geography
   ) AS distance
 FROM 
