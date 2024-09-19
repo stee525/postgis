@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: postgis_container
     environment:
-      POSTGRES_DB: osm_switzerland
+      POSTGRES_DB: postgres
       POSTGRES_USER: pgadmin
       POSTGRES_PASSWORD: geheim
     volumes:
@@ -23,7 +23,9 @@ services:
       PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
       PGADMIN_DEFAULT_PASSWORD: geheim
       PGADMIN_CONFIG_WTF_CSRF_HEADERS: '["Referer", "Origin"]'
-      PGADMIN_CONFIG_WTF_CSRF_ENABLED: 'False'
+      PGADMIN_CONFIG_WTF_CSRF_ENABLED: 'False'   
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     ports:
