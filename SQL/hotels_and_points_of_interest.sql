@@ -13,7 +13,7 @@ SELECT
     h."addr:postcode" AS postcode,
     h."addr:city" AS city,
     h."addr:country" AS country,
-    ST_Transform(h.way, 4326) AS hotel_location
+    ST_Transform(h.way, 4326) AS geom
 FROM planet_osm_point h
 WHERE h.tourism = 'hotel'
 AND ST_Within(ST_Transform(h.way, 4326), (SELECT ST_Transform(way, 4326) FROM zurich_boundary));
@@ -32,7 +32,7 @@ SELECT
     poi."addr:street" AS street,
     poi."addr:postcode" AS postcode,
     poi."addr:city" AS city,
-    ST_Transform(poi.way, 4326) AS poi_location
+    ST_Transform(poi.way, 4326) AS geom
 FROM planet_osm_point poi
 WHERE poi.amenity IN ('bar', 
 					  'restaurant', 
@@ -54,7 +54,7 @@ hotels AS (
   SELECT
     name AS hotel_name,
     way AS hotel_geom,
-	ST_TRANSFORM(way, 4326) AS hotel_geom_st
+	ST_TRANSFORM(way, 4326) AS geom
   FROM planet_osm_point
   WHERE tourism = 'hotel'
   AND ST_Within(way, (SELECT way FROM zurich_boundary))
@@ -93,7 +93,7 @@ hotels AS (
   SELECT
     name AS hotel_name,
     way AS hotel_geom,
-	ST_TRANSFORM(way, 4326) AS hotel_geom_st
+	ST_TRANSFORM(way, 4326) AS geom
   FROM planet_osm_point
   WHERE tourism = 'hotel'
   AND ST_Within(way, (SELECT way FROM zurich_boundary))
