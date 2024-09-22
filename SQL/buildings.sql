@@ -1,4 +1,4 @@
--- Buildings
+-- All buildings for which the city name is 'Zürich' and the postal code is '8001'.
 SELECT
     p.osm_id,
     p."addr:street",

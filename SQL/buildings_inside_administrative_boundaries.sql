@@ -1,4 +1,4 @@
--- All buildings inside the city of Zuerich
+-- All buildings inside the administrative boundaries of the city of Zuerich
 WITH zurich_boundary AS (
     SELECT way
     FROM planet_osm_polygon

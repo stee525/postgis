@@ -119,6 +119,3 @@ AND poi.amenity IN ('bar',
                     'theatre')
 GROUP BY bh.hotel_name
 ORDER BY poi_count DESC;
-
-
-

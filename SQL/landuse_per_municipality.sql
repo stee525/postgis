@@ -28,7 +28,7 @@ SELECT
     p.osm_id,
     COALESCE(p.landuse, p.leisure) AS landuse_leisure,
     ST_Area(ST_Transform(p.way, 32632)) AS area_sqm,
-    ST_Transform(p.way, 4326) AS way_wgs84
+    ST_Transform(p.way, 4326) AS geom
 FROM
     public.planet_osm_polygon AS p
 JOIN

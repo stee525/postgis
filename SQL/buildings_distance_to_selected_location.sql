@@ -1,4 +1,4 @@
-SELECT 
+  SELECT 
   p.osm_id,
   p."addr:street",
   p."addr:housenumber",
@@ -16,4 +16,4 @@ FROM
 WHERE 
   p."addr:street" IS NOT NULL
   AND p."addr:city" = 'Zürich'
-  AND p."addr:postcode" IN ('8055')
+  AND p."addr:postcode" IN ('8055', '8003')

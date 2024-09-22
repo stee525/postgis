@@ -5,5 +5,5 @@ SELECT ROUND(
         -- Genf (longitude, latitude)
         ST_GeographyFromText('SRID=4326;POINT(6.1466 46.20176)')
     ) / 1000 AS NUMERIC), -- Convert meters to kilometers
-    1 -- Round to two decimal places
+    1 -- Round to one decimal place
 ) AS distance_in_kilometers;

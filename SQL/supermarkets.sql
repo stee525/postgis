@@ -1,4 +1,4 @@
--- Get supermarkets with defined brand names.
+-- Select supermarkets with defined brand names.
 SELECT
     p.osm_id,
     p."addr:street",
@@ -6,13 +6,13 @@ SELECT
     p."addr:city",
     p."addr:postcode",
     p.shop,
-    UPPER(p.name),
+    UPPER(p.name) AS brand,
     ST_TRANSFORM(p.way, 4326) AS geom
 FROM
     public.planet_osm_point AS p
 WHERE 
     p.shop = 'supermarket'
-    AND (UPPER(p.name) LIKE '%MIGROS%' OR UPPER(p.name) LIKE '%ALDI%')
+    AND (UPPER(p.name) LIKE '%%MIGROS%%' OR UPPER(p.name) LIKE '%%ALDI%%')
     AND p."addr:street" IS NOT NULL
     AND p."addr:housenumber" IS NOT NULL
     AND p."addr:city" IS NOT NULL

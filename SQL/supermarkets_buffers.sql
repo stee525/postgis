@@ -1,4 +1,4 @@
--- Select all supermarkets with defined buffer
+-- Select supermarkets and create a buffer around them with 1000 meters radius.
 SELECT
     p.osm_id,
     p."addr:street",
@@ -16,4 +16,4 @@ WHERE
     AND p."addr:street" IS NOT NULL
     AND p."addr:housenumber" IS NOT NULL
     AND p."addr:city" IS NOT NULL
-    AND p."addr:postcode" IS NOT NULL
+    AND p."addr:postcode" IS NOT NULL;
