@@ -1,3 +1,8 @@
+--Dieser SQL-Code führt eine Abfrage aus, die bestimmte Gebäude in Zürich auswählt 
+--und die Entfernung dieser Gebäude zu einem bestimmten Punkt berechnet.
+--Dieser Code sucht nach Gebäuden in Zürich (in den Postleitzahlgebieten 8055 und 8003), die eine Straßenadresse haben. 
+--Für jedes dieser Gebäude wird die Entfernung zum Großmünster berechnet und ausgegeben.
+
 -- Select buildings and get the distance of buildings to a selected location
 SELECT 
   p.osm_id,
